@@ -35,6 +35,9 @@ int
 vlc_playlist_SetCurrentMedia(vlc_playlist_t *playlist, ssize_t index);
 
 input_item_t *
+vlc_playlist_GetNextFile(vlc_playlist_t *playlist);
+
+input_item_t *
 vlc_playlist_GetNextMedia(vlc_playlist_t *playlist);
 
 #endif

@@ -117,6 +117,8 @@ player_get_next_media(vlc_player_t *player, void *userdata)
 {
     VLC_UNUSED(player);
     vlc_playlist_t *playlist = userdata;
+	if(!playlist->has_next)
+		return vlc_playlist_GetNextFile(playlist);
     return vlc_playlist_GetNextMedia(playlist);
 }
 
